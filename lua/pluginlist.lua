@@ -15,4 +15,17 @@ return {
             require('onedark').load()
         end
     },
+    {
+        -- lualine.nvim and nvim-web-devicons
+        'nvim-lualine/lualine.nvim',
+        dependencies = {
+            "nvim-tree/nvim-web-devicons"
+        },
+        config = function()
+            require("lualine").setup({
+                icons_enabled = true,
+                theme = 'onedark',
+            })
+        end
+    },
 }
