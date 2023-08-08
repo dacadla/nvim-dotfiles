@@ -23,8 +23,9 @@ local on_attach = function(_, bufnr)
     end, {})
 end
 
--- make capabilities
+-- make capabilities and cmp_nvim_lsp capabilies
 local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- setup mason
 require("mason").setup()
