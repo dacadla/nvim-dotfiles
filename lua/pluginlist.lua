@@ -32,6 +32,7 @@ return {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
+    'folke/neodev.nvim',
     {
         -- code completion with nvim-cmp
         'hrsh7th/nvim-cmp',

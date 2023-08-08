@@ -44,4 +44,16 @@ require("mason-lspconfig").setup_handlers({
             capabilities = capabilities,
         }
     end,
+    -- lua-language-server
+    ["lua_ls"] = function()
+        require('neodev').setup()
+        require('lspconfig').lua_ls.setup {
+            on_attach = on_attach,
+            capabilities = capabilities,
+            Lua = {
+              workspace = { checkThirdParty = false },
+              telemetry = { enable = false },
+            },
+        }
+    end
 })
