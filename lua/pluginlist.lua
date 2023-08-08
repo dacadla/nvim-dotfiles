@@ -43,4 +43,9 @@ return {
             'hrsh7th/cmp-nvim-lsp',
         },
     },
+    {
+        -- Treesitter
+        'nvim-treesitter/nvim-treesitter',
+        build = ':TSUpdate',
+    },
 }
