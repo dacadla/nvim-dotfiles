@@ -56,5 +56,12 @@ return {
           "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
           "MunifTanjim/nui.nvim",
         }
-    }
+    },
+	{
+		-- Gitsigns
+		"lewis6991/gitsigns.nvim",
+		config = function()
+			require('gitsigns').setup()
+		end
+	},
 }
